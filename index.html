@@ -276,7 +276,8 @@ header.stuck{background:rgba(5,10,22,.82);backdrop-filter:blur(16px);border-bott
 @keyframes draw{to{stroke-dashoffset:0}}
 
 /* ============ SEÇÕES ============ */
-section{padding:clamp(64px,9vw,120px) 0}
+/* scroll-margin evita que o cabeçalho fixo cubra o topo da seção ao clicar no menu */
+section{padding:clamp(64px,9vw,120px) 0;scroll-margin-top:96px}
 .head-block{max-width:720px;margin-bottom:clamp(34px,5vw,56px)}
 .head-block .h2{margin:16px 0 18px}
 
@@ -423,6 +424,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#servicos">Serviços</a>
         <a href="#metodo">Como funciona</a>
         <a href="#ia">IA no WhatsApp</a>
+        <a href="#sobre">Sobre</a>
         <a href="#duvidas">Dúvidas</a>
       </div>
 
@@ -435,6 +437,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#servicos">Serviços</a>
       <a href="#metodo">Como funciona</a>
       <a href="#ia">IA no WhatsApp</a>
+      <a href="#sobre">Sobre</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="https://calendly.com/agenciarocha/45min" target="_blank" rel="noopener" style="color:#7AA8FF">Agendar diagnóstico gratuito</a>
     </div>
@@ -674,6 +677,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- ================= SOBRE ================= -->
+<section id="sobre">
+  <div class="wrap">
+    <div class="head-block rv">
+      <span class="eyebrow">Sobre nós</span>
+      <h2 class="h2">Gente que <span class="grad">opera a conta</span>, não que só entrega relatório.</h2>
+      <p class="lead">A Agência Rocha nasceu de uma inconformidade simples: empresa boa investindo em anúncio sem saber quanto custa cada cliente. Trabalhamos de Simões Filho, na Bahia, para negócios de todo o Brasil — do comércio local ao e-commerce.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card rv">
+        <span class="k">Quem conduz</span>
+        <h3>Operação com dono junto</h3>
+        <p>Sua conta é conduzida por Renato Rocha e não repassada para uma fila de estagiários. Quem monta a estratégia é quem acompanha o resultado e quem senta com você para explicar o que fazer a seguir.</p>
+      </div>
+      <div class="card rv">
+        <span class="k">Como pensamos</span>
+        <h3>Antes do anúncio, a operação</h3>
+        <p>Campanha não conserta oferta fraca, página que não converte nem atendimento que demora. Por isso olhamos o funil inteiro — e falamos quando o problema não está na plataforma.</p>
+      </div>
+      <div class="card rv">
+        <span class="k">O que entregamos</span>
+        <h3>Número que orienta decisão</h3>
+        <p>Rastreamento em GTM e GA4 configurado desde o primeiro dia, para você acompanhar custo por lead e origem de cada contato. Sem métrica de vaidade e sem relatório que ninguém consegue usar.</p>
+      </div>
+    </div>
+
+    <!--
+      ============ NÚMEROS DA AGÊNCIA (opcional) ============
+      Mesmo critério do bloco de prova: só publique com dados reais.
+      Preencha e remova os comentários para ativar.
+
+      <div class="cards" style="margin-top:18px">
+        <div class="card"><h3>[CONFIRMAR]</h3><p>Anos de operação</p></div>
+        <div class="card"><h3>[CONFIRMAR]</h3><p>Contas gerenciadas</p></div>
+        <div class="card"><h3>[CONFIRMAR]</h3><p>Investimento sob gestão</p></div>
+      </div>
+    -->
+
+    <div class="btn-row rv" style="margin-top:34px">
+      <a class="btn btn-primary" href="https://calendly.com/agenciarocha/45min" target="_blank" rel="noopener" data-cta="sobre-agendar">Conversar sobre meu negócio</a>
+      <a class="btn btn-wa" href="https://wa.me/5571992641675?text=Ol%C3%A1!%20Quero%20conhecer%20as%20estrat%C3%A9gias%20de%20tr%C3%A1fego%20pago%20da%20Ag%C3%AAncia%20Rocha." target="_blank" rel="noopener" data-cta="sobre-whatsapp">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= FAQ ================= -->
 <section id="duvidas">
   <div class="wrap">
@@ -716,6 +765,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#servicos">Serviços</a>
         <a href="#metodo">Como funciona</a>
         <a href="#ia">IA no WhatsApp</a>
+        <a href="#sobre">Sobre</a>
         <a href="#duvidas">Dúvidas</a>
         <a href="https://www.instagram.com/renatorochapro/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://wa.me/5571992641675?text=Ol%C3%A1!%20Quero%20conhecer%20as%20estrat%C3%A9gias%20de%20tr%C3%A1fego%20pago%20da%20Ag%C3%AAncia%20Rocha." target="_blank" rel="noopener">WhatsApp 71 99264-1675</a>

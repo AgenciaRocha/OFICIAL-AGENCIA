@@ -56,7 +56,7 @@ externas para medir a página sem esperar timeout.
 | | |
 |---|---|
 | WhatsApp | `5571992641675` |
-| Instagram | `renatorochapro` |
+| Instagram | `agenciarochapro` |
 | Agenda | `https://calendly.com/agenciarocha/45min` |
 | GTM | `GTM-T5KZ9XP` |
 | Endereço | Rua Maceió, Km 25 · Simões Filho — BA · 43705-570 |

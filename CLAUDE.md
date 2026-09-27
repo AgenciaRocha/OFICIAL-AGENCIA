@@ -17,12 +17,31 @@ A cada alteração aprovada, **atualizar o GitHub sem precisar ser lembrado**:
 1. Commit na branch de trabalho
 2. `git push -u origin <branch>`
 3. Abrir PR para `main` e fazer o merge
-4. Enviar o `index.html` atualizado para o usuário — a publicação na hospedagem
-   é manual (ele sobe o arquivo), então o site no ar só muda depois disso
+4. **Sincronizar a branch `add-chatwoot-widget` com a `main`** (fast-forward:
+   `git push origin main:refs/heads/add-chatwoot-widget`) — ver aviso abaixo
+
+### Publicação (Hostinger com deploy automático via GitHub)
+
+Descoberto em 27/09/2026: a Hostinger está conectada ao GitHub com **implantação
+automática**, mas configurada pra puxar da branch **`add-chatwoot-widget`**, não
+da `main` (ficou assim porque essa foi a primeira branch criada quando a
+integração GitHub↔Hostinger foi montada, no PR #9). Isso significa:
+
+- Merge na `main` **não** publica sozinho. Só publica o que chega em
+  `add-chatwoot-widget`.
+- Até alguém trocar isso no painel da Hostinger (Sites → agênciarocha.com →
+  Conectado com GitHub → trocar branch pra `main`), **todo PR mergeado precisa
+  ser replicado manualmente pra `add-chatwoot-widget`** com o fast-forward do
+  passo 4 acima, senão o site no ar fica desatualizado silenciosamente — não dá
+  erro nenhum, só não muda nada.
+- Pra confirmar que uma publicação realmente chegou: `curl -sI
+  https://xn--agnciarocha-obb.com/ | grep -i last-modified` (esse é o domínio
+  real, com acento — agenciarocha.com sem acento é outro domínio, parado no
+  Squarespace, não confundir).
 
 O GitHub Pages está configurado por workflow (`.github/workflows/deploy-pages.yml`),
 mas falha até que alguém habilite `Settings → Pages → Source: GitHub Actions`.
-O site em produção (agenciarocha.com) é servido por outra hospedagem.
+Isso é irrelevante agora que se sabe do deploy automático via Hostinger acima.
 
 ## Como testar
 
